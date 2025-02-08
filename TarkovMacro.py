@@ -12,9 +12,9 @@ programs = [
 for program in programs:
     try:
         subprocess.Popen(program, shell=True)
-        print(f"실행 중: {program}")
+        print(f"Running : {program}")
         time.sleep(1)  # 프로그램 실행 간 1초씩 대기
     except Exception as e:
-        print(f"오류 발생: {program} 실행 실패 - {e}")
+        print(f"Error: {program} Fail - {e}")
 
-print("모든 프로그램 실행 완료!")
+print("Done.")
